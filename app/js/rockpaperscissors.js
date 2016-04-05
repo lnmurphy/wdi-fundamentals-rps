@@ -22,11 +22,7 @@ function randomPlay() {
 ////////////////////////////////////////////////
 
 function getPlayerMove(move) {
-    if (move === "rock" || "paper" || "scissors") {
-        return move;
-    } else {
-        return getInput();
-    }
+    return move || getInput();
 }
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
@@ -34,11 +30,7 @@ function getPlayerMove(move) {
 
 
 function getComputerMove(move) {
-    if (move === "rock" || "paper" || "scissors") {
-        return move;
-    } else {
-        return randomPlay();
-    }
+    return move || randomPlay();
 }
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
